@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-
 import 'utils.dart';
 
 class DoctorRegisterMobile extends StatefulWidget {
@@ -14,9 +11,9 @@ class DoctorRegisterMobile extends StatefulWidget {
 class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
   @override
   Widget build(BuildContext context) {
-    double baseWidth = 390;
+    double baseWidth = MediaQuery.of(context).size.width;
     double fem = MediaQuery.of(context).size.width / baseWidth;
-    double ffem = fem * 0.97;
+    double ffem = fem * 0.99;
     return Scaffold(
       body:
       SafeArea(
@@ -44,7 +41,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                           fontSize: 31.0589981079*ffem,
                           fontWeight: FontWeight.w800,
                           height: 1.255*ffem/fem,
-                          color: Color(0xff658bff),
+                          color: const Color(0xff658bff),
                         ),
                       ),
                     ),
@@ -61,7 +58,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                           fontSize: 27.7648620605*ffem,
                           fontWeight: FontWeight.w700,
                           height: 1.255*ffem/fem,
-                          color: Color(0xff658bff),
+                          color: const Color(0xff658bff),
                         ),
                       ),
                     ),
@@ -76,7 +73,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                         fontSize: 15*ffem,
                         fontWeight: FontWeight.w600,
                         height: 1.26*ffem/fem,
-                        color: Color(0xff403e86),
+                        color: const Color(0xff403e86),
                       ),
                     ),
                   ),
@@ -98,8 +95,8 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                           width: 66.22*fem,
                           height: 35.04*fem,
                           decoration: BoxDecoration (
-                            border: Border.all(color: Color(0xffd7d7d7)),
-                            color: Color(0xffffffff),
+                            border: Border.all(color: const Color(0xffd7d7d7)),
+                            color: const Color(0xffffffff),
                             borderRadius: BorderRadius.circular(10*fem),
                           ),
                           child: Center(
@@ -110,7 +107,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                                 fontSize: 15*ffem,
                                 fontWeight: FontWeight.w400,
                                 height: 1.255*ffem/fem,
-                                color: Color(0xff000000),
+                                color: const Color(0xff000000),
                               ),
                             ),
                           ),
@@ -128,6 +125,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                             margin: EdgeInsets.fromLTRB(10*fem, 0, 0, 0),
                             child: TextField(
                               textAlignVertical: TextAlignVertical.center,
+                              keyboardType: TextInputType.number,
                               decoration: InputDecoration(
                                 border: InputBorder.none,
                                 hintText: "Input your mobile number",
@@ -136,7 +134,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                                   fontSize: 15*ffem,
                                   fontWeight: FontWeight.w400,
                                   height: 1.255*ffem/fem,
-                                  color: Color(0xff000000),
+                                  color: const Color(0xff000000),
                                 ),
                               ),
                             ),
@@ -170,7 +168,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                                 fontSize: 12*ffem,
                                 fontWeight: FontWeight.w400,
                                 height: 1.255*ffem/fem,
-                                color: Color(0xff403e86),
+                                color: const Color(0xff403e86),
                               ),
                             ),
                             TextSpan(
@@ -190,7 +188,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                                 fontSize: 12*ffem,
                                 fontWeight: FontWeight.w700,
                                 height: 1.255*ffem/fem,
-                                color: Color(0xffaea7a0),
+                                color: const Color(0xffaea7a0),
                               ),
                             ),
                             TextSpan(
@@ -210,7 +208,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                                 fontSize: 12*ffem,
                                 fontWeight: FontWeight.w400,
                                 height: 1.255*ffem/fem,
-                                color: Color(0xffaea7a0),
+                                color: const Color(0xffaea7a0),
                               ),
                             ),
                             TextSpan(
@@ -220,7 +218,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                                 fontSize: 12*ffem,
                                 fontWeight: FontWeight.w700,
                                 height: 1.255*ffem/fem,
-                                color: Color(0xfffc86ac),
+                                color: const Color(0xfffc86ac),
                               ),
                             ),
                           ],
@@ -271,7 +269,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                           fontSize: 15*ffem,
                           fontWeight: FontWeight.w400,
                           height: 1.2102272034*ffem/fem,
-                          color: Color(0xff009fe7),
+                          color: const Color(0xff009fe7),
                         ),
                         children: [
                           TextSpan(
@@ -291,7 +289,7 @@ class _DoctorRegisterMobileState extends State<DoctorRegisterMobile> {
                               fontSize: 15*ffem,
                               fontWeight: FontWeight.w400,
                               height: 1.255*ffem/fem,
-                              color: Color(0xff009fe7),
+                              color: const Color(0xff009fe7),
                             ),
                           ),
                           TextSpan(
