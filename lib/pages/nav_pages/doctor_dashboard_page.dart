@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils.dart';
@@ -78,7 +77,7 @@ class _DoctorDashboardPageState extends State<DoctorDashboardPage> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.person,
                       color: Color(0xff658BFF),
                     ),
